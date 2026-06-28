@@ -84,4 +84,4 @@ npm run register
 * `/ticket close`
 * `/suggestion panel`
 
-全体設計は [docs/design.md](https://www.google.com/search?q=docs/design.md) を参照。
+全体設計は [docs/design.md](https://github.com/ibutya/melt-bot/blob/master/docs/design.md) を参照。
