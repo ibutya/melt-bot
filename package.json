@@ -1,0 +1,39 @@
+{
+  "name": "melt-bot",
+  "version": "0.1.0",
+  "private": true,
+  "description": "All-in-one Discord management bot for private servers.",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js",
+    "register": "node src/register-commands.js",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "postinstall": "patch-package"
+  },
+  "dependencies": {
+    "@discordjs/opus": "^0.10.0",
+    "@distube/soundcloud": "^2.0.4",
+    "@distube/spotify": "^2.0.2",
+    "@distube/youtube": "^1.0.4",
+    "@distube/yt-dlp": "^2.0.1",
+    "@prisma/client": "^6.0.0",
+    "discord.js": "^14.0.0",
+    "distube": "^5.2.3",
+    "dotenv": "^16.4.7",
+    "ffmpeg-static": "^5.3.0",
+    "patch-package": "^8.0.1"
+  },
+  "devDependencies": {
+    "prisma": "^6.0.0"
+  },
+  "allowScripts": {
+    "@discordjs/opus@0.10.0": true,
+    "@distube/yt-dlp@2.0.1": true,
+    "@prisma/client@6.19.3": true,
+    "@prisma/engines@6.19.3": true,
+    "ffmpeg-static@5.3.0": true,
+    "prisma@6.19.3": true
+  }
+}

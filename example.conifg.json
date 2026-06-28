@@ -1,0 +1,120 @@
+{
+    "welcome": {
+      "enabled": true,
+      "channelId": "YOUR_WELCOME_CHANNEL_ID",
+      "message": "{user} \nめるとめもりーへようこそ！"
+    },
+    "logs": {
+      "member": {
+        "enabled": true,
+        "channelId": "YOUR_MEMBER_LOG_CHANNEL_ID"
+      },
+      "message": {
+        "enabled": true,
+        "channelId": "YOUR_MESSAGE_LOG_CHANNEL_ID"
+      },
+      "channel": {
+        "enabled": true,
+        "channelId": "YOUR_CHANNEL_LOG_CHANNEL_ID"
+      },
+      "role": {
+        "enabled": true,
+        "channelId": "YOUR_ROLE_LOG_CHANNEL_ID"
+      },
+      "voice": {
+        "enabled": true,
+        "channelId": "YOUR_VOICE_LOG_CHANNEL_ID"
+      },
+      "moderation": {
+        "enabled": true,
+        "channelId": "YOUR_MODERATION_LOG_CHANNEL_ID"
+      },
+      "invite": {
+        "enabled": true,
+        "channelId": "YOUR_INVITE_LOG_CHANNEL_ID"
+      },
+      "event": {
+        "enabled": true,
+        "channelId": "YOUR_EVENT_LOG_CHANNEL_ID"
+      }
+    },
+    "moderation": {
+      "strikeDecayDays": 30,
+      "punishments": {
+        "1": {
+          "action": "WARNING"
+        },
+        "2": {
+          "action": "TIMEOUT",
+          "durationSeconds": 86400
+        },
+        "3": {
+          "action": "TIMEOUT",
+          "durationSeconds": 604800
+        },
+        "4": {
+          "action": "KICK"
+        },
+        "5": {
+          "action": "BAN"
+        }
+      },
+      "strikeRoles": {
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": ""
+      }
+    },
+    "antiRaid": {
+      "enabled": true,
+      "messageSpam": {
+        "enabled": true,
+        "threshold": 5,
+        "windowSeconds": 7,
+        "strikeAmount": 1
+      },
+      "massMentions": {
+        "enabled": true,
+        "threshold": 5,
+        "strikeAmount": 1
+      },
+      "inviteLinks": {
+        "enabled": true,
+        "strikeAmount": 1
+      },
+      "channelCreate": {
+        "enabled": true,
+        "threshold": 5,
+        "windowSeconds": 30,
+        "strikeAmount": 1
+      },
+      "roleCreate": {
+        "enabled": true,
+        "threshold": 5,
+        "windowSeconds": 30,
+        "strikeAmount": 1
+      }
+    },
+    "voiceSystem": {
+      "createChannelId": "YOUR_VC_CREATION_CHANNEL_ID",
+      "categoryId": "YOUR_VC_CATEGORY_ID",
+      "channelName": "{user.name}のvc"
+    },
+    "ticket": {
+      "enabled": true,
+      "categoryId": "",
+      "supportRoleIds": [],
+      "panelTitle": "チケット",
+      "panelDescription": "問い合わせやら、何かあれば気軽に開いてください"
+    },
+    "suggestion": {
+      "enabled": true,
+      "channelId": "YOUR_SUGGESTION_CHANNEL_ID",
+      "anonymous": true,
+      "panelTitle": "意見箱",
+      "panelDescription": "意見/要望あればここへ"
+    },
+    "guilds": {}
+  }

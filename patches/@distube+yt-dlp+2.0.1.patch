@@ -1,0 +1,15 @@
+diff --git a/node_modules/@distube/yt-dlp/dist/index.js b/node_modules/@distube/yt-dlp/dist/index.js
+index b17b126..57d3fb4 100644
+--- a/node_modules/@distube/yt-dlp/dist/index.js
++++ b/node_modules/@distube/yt-dlp/dist/index.js
+@@ -77,9 +77,7 @@ var json = /* @__PURE__ */ __name((url, flags, options) => {
+     process2.stdout?.on("data", (chunk) => {
+       output += chunk;
+     });
+-    process2.stderr?.on("data", (chunk) => {
+-      output += chunk;
+-    });
++    // stderr suppressed to prevent JSON parse errors
+     process2.on("close", (code) => {
+       if (code === 0) resolve(JSON.parse(output));
+       else reject(new Error(output));
