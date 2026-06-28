@@ -2,6 +2,8 @@
 
 自鯖で使いたいだけの自己満bot
 
+※macで利用することを前提としているため、windows/linux等で利用する場合は`src/service/music.js`の15行目を環境に合わせて修正してください
+
 ## Setup
 
 ```bash
