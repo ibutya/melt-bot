@@ -2,7 +2,8 @@
 
 自鯖で使いたいだけの自己満bot
 
-**※`src/service/music.js`の15行目を環境に合わせて修正してください**\n
+**※`src/service/music.js`の15行目を環境に合わせて修正してください**
+
 　初期ではhomebrewで入れたyt-dlpのパスになります。
 ## Setup
 
